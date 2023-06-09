@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Countries</title>
+</head>
+
+<body>
+	<div id="preloader">
+		<div class="loader">Loading...</div>
+	</div>
+	<div class="container">
+		<form method="GET">
+			<div class="search">
+				<label class="search__title" for="search__area">Enter the country: </label>
+				<input id="search__area" type="text">
+				<button id="search__btn">Show information</button>
+			</div>
+		</form>
+		<div class="info">
+			<p class="info__title">Name: <span class="info__content" id="countryName"></span></p>
+			<p class="info__title">Abbreviation: <span class="info__content" id="abbreviation"></span></p>
+			<p class="info__title">Capital: <span class="info__content" id="capital"></span></p>
+			<p class="info__title">Region: <span class="info__content" id="region"></span></p>
+			<p class="info__title">Subregion: <span class="info__content" id="subregion"></span></p>
+			<p class="info__title">Flag: <img id="info__flag" src="" alt="flag"></p>
+			<p class="info__title">Coat of arms: <img id="info__coat" src="" alt="coatOfArms"></p>
+		</div>
+	</div>
+	<table class="table">
+		<tr class="table__row">
+			<th class="table__heading">№</th>
+			<th class="table__heading">Name</th>
+			<th class="table__heading">Code</th>
+			<th class="table__heading">Capital</th>
+			<th class="table__heading">Region</th>
+			<th class="table__heading">Subregion</th>
+			<th class="table__heading">Population</th>
+			<th class="table__heading">Flag</th>
+			<th class="table__heading">Coat Of Arms</th>
+		</tr>
+	</table>
+	<script src="js/script.js"></script>
+	<script src="js/table.js"></script>
+</body>
+
+</html>
